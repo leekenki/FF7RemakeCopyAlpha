@@ -1,0 +1,73 @@
+@Sub SRSurface = SRSurfaceNormalMap
+    Normal Map = @Tex file "../Textures/PC0000_00_BodyA_N.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_N.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 0
+    Flip Z = 0
+    Object Space = 0
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceAdvancedMap
+    Microsurface Map = @Tex file "../Textures/PC0000_00_BodyA_M.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_M.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 1
+    Mode = 1
+    Maximum = 1
+    Minimum = 0
+    Exponent = 0.75
+    Horizon Smoothing = 0
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../Textures/PC0000_00_BodyA_C.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_C.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 0.8 0.8 0.8
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRReflectivity = SRReflectivityMetalnessAdvanced
+    Metalness Map = @Tex file "../Textures/PC0000_00_BodyA_M.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_M.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Metalness = 1
+    Invert = 0
+    Specular Level Map = nil
+    Channel;advMtlMask = 0
+    Specular = 0.04
+    Invert = 0
+    Specular Curve = 0
+@End
+
+@Sub SRReflection = SRReflectionGGX
+    Horizon Occlusion = 1
+@End
+
+@Sub SROcclusion = SROcclusionMap
+    Occlusion Map = @Tex file "../Textures/PC0000_00_BodyA_O.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_O.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;occlusion = 0
+    Occlusion = 1
+    UV Set = 1
+    Vertex Channel = 0
+    Cavity Map = @Tex file "../Textures/PC0000_00_BodyA_M.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_M.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;cavity = 2
+    Diffuse Cavity = 1
+    Specular Cavity = 1
+@End
+
+@Sub SRTransparency = SRTransparencyDither
+    Use Albedo Alpha = 1
+    Alpha Map = @Tex file "../Textures/PC0000_00_BodyA_A.png" fileFull "G:/!Projects/Marmoset/bundles/!TODO/FFVII_Cloud/Assets/Textures/PC0000_00_BodyA_A.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Alpha = 1
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+    Wrap = 1
+    Aniso = 2
+    Filter = 1
+@End
+
