@@ -273,6 +273,7 @@ public class PlayerBase : MonoBehaviour
             //     target.GetComponent<EnemyBase>().beingAttackedByPlayerOnControl = true;
             //     CallAttackFunction();
             // }
+            #region 약공격, 강공격
             if (Input.GetButtonDown("Fire1") && normalAttackCount <= 0)
             {
                 CallAttackFunction(0); //약공격
@@ -305,8 +306,10 @@ public class PlayerBase : MonoBehaviour
                 normalAttackCount = 0;
                 attackTime = 0;
             }
+            #endregion
             
         }
+        
          //게임 매니저에 현재 오브젝트가 컨트롤중이라고 알림
         GameManager.Instance.playerOnControl = gameObject;
     }

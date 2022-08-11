@@ -40,10 +40,12 @@ public class PlayerAttackBase : MonoBehaviour
     }
     virtual public void AbilityAttack(GameObject target)
     {
+        //
         Debug.Log("AbilityAttack");
     }
     virtual public void MateriaAttack(GameObject target)
     {
+        //
         Debug.Log("MateriaAttack");
     }
     private void Update()

@@ -35,7 +35,7 @@ public class Player0 : PlayerBase
                 case 2: //어빌리티
                     player0Attack.AbilityAttack(target);
                     break;
-                case 3:
+                case 3: //마테리아
                     player0Attack.MateriaAttack(target);
                     break;
             }
