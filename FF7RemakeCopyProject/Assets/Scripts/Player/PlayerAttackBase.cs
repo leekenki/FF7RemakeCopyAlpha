@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerAttackBase : MonoBehaviour
 {
+    // 이근기 임시 변수
+    
+
+
     // 플레이어 공격 관리, 함수만 만들어 놓고, 플레이어base 혹은 ai에서 알아서 부르도록
     // Start is called before the first frame update
     #region 프로토타입 임시

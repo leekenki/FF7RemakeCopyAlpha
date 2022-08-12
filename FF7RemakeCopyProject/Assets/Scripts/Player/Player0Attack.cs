@@ -19,17 +19,25 @@ public class Player0Attack : PlayerAttackBase
     // (7) 피격판정, 데미지 등 일단 무시
     #endregion
 
-    // 때리는 것이 가능한 적과 나의 거리 ( 무기휘둘렀을 때의 반경이 적절하게 고려되야함 )
-    public float Attackable_Distance;
-    
 
     private void Update()
-    {
-        // 1. 공격해서 범위 안에 적이 없는 경우 WeekAttack 은 함수는 발동하지만
-        //    적에게 데미지가 들어가지 않는 것임
-        // 2. 공격해서 범위 안에 적이 있는 경우 WeekAttack 함수가 발동하며, 데미지도 함께 들어갑니다. 
-        //    에너미는 PlayerBase에서 일정 조건을 만족 시, List에 존재하는 적의 수 (0, 1, 2 등 index 넘버로 정의됨)
-        //    
+    {       
+        // 약 공격 버튼 (단축키)
+        if(Input.GetKeyDown(KeyCode.Keypad1))
+        {
+
+        }
+        // 어빌리티 공격 버튼 (단축키)
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+
+        }
+        // 마테리아 스킬 버튼 (단축키)
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+
+        }
+
     }
 
 
